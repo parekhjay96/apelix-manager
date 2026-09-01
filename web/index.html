@@ -2,27 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>Apelix Business Manager</title>
   <meta name="description" content="Apelix Business Manager — replace this placeholder with Apelix_Business_Manager.html content." />
   <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0066cc" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="apple-touch-icon" href="/icons/icon.svg" />
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1>Apelix Business Manager</h1>
-    <p class="lead">Placeholder site — replace with Apelix_Business_Manager.html</p>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <img src="/icons/icon.svg" alt="Apelix logo" class="logo" width="48" height="48" />
+      <div>
+        <h1 class="site-title">Apelix Business Manager</h1>
+        <p class="lead">Mobile-ready business page. Replace this with Apelix_Business_Manager.html content or merge it below.</p>
+      </div>
+    </div>
   </header>
 
-  <main class="container">
-    <section>
-      <h2>How to proceed</h2>
+  <main class="container" role="main">
+    <section aria-labelledby="how-to-title">
+      <h2 id="how-to-title">How to proceed</h2>
       <ol>
         <li>Upload your Apelix_Business_Manager.html into the <code>web/</code> folder and rename it to <code>index.html</code> or merge its contents into this file.</li>
         <li>Open INSTALL.md for build and install steps for PWA and mobile wrapper.</li>
       </ol>
     </section>
+
+    <section aria-labelledby="demo-title">
+      <h2 id="demo-title">Demo actions</h2>
+      <p>Use the buttons below to test PWA install prompt and service worker cache.</p>
+      <p>
+        <button class="primary" onclick="promptPWAInstall()">Install PWA</button>
+      </p>
+    </section>
   </main>
+
+  <footer class="container" role="contentinfo">
+    <p>Built for mobile-first. Replace content with the provided Apelix_Business_Manager.html.</p>
+  </footer>
 
   <script src="/js/app.js"></script>
 </body>
