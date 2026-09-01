@@ -1,0 +1,6 @@
+{
+  "appId": "com.apelix.business",
+  "appName": "Apelix Business Manager",
+  "webDir": "../web",
+  "bundledWebRuntime": false
+}
